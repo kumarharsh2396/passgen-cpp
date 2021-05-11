@@ -2,21 +2,28 @@
 #include "engine.h"
 #include <iostream>
 #include <string>
-// definitions of the RandomEngine class here
 
+
+// Constructors:
+RandomEngine::RandomEngine(uint8_t l){
+    charSet.resize(l);
+}
+
+RandomEngine::RandomEngine(bool s){
+// definitions of the RandomEngine class here
 // Constructors:
 RandomEngine::RandomEngine(uint8_t l){
     
 }
 
 RandomEngine::RandomEngine(bool s){
-   
-    
+  
 }
 
 RandomEngine::RandomEngine(uint8_t l, bool s){
     
 }
+
 
 //  functions
 void RandomEngine::setLength(uint8_t l){
@@ -36,7 +43,6 @@ bool RandomEngine::getSymbolSetStatus(){
 }
 
 std::string RandomEngine::getString(){
-    return "";
-
-    
+    // returning any dummy string
+    return password;
 }
